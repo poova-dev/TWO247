@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Destinations | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Discover handpicked domestic and international holiday destinations with TWO247. Explore Dubai, Maldives, Singapore, Kashmir, and Europe with 24/7 travel guidance.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .navbar-scrolled .brand-logo-title { color: #071A2B !important; }
+    .navbar-scrolled .brand-logo-sub { color: #64748B !important; }
+    .navbar-scrolled .nav-link { color: #0F172A !important; }
+    .navbar-scrolled .nav-link:hover { color: #F59E0B !important; }
+    .navbar-scrolled #mobile-menu-btn { color: #071A2B !important; }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Navigation -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1">
+        <div class="w-10 h-10 transition-transform duration-300 group-hover:scale-105">
+          <svg viewBox="0 0 48 48" fill="none" class="w-full h-full drop-shadow-md">
+            <circle cx="24" cy="24" r="21" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="85 45" stroke-linecap="round" />
+            <path d="M12 16C12 12 18 10 24 15C30 10 36 12 36 16C36 28 29 36 24 38C19 36 12 28 12 16Z" fill="#071A2B" stroke="#F59E0B" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M14 17C17 14 22 17 24 20C26 17 31 14 34 17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="18" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="18.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <circle cx="30" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="30" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="30.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <polygon points="24,23 26,27 24,31 22,27" fill="#F59E0B" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight brand-logo-title text-white">TWO<span class="text-brand-orange">247</span></span>
+          <span class="text-[10px] uppercase font-semibold tracking-widest brand-logo-sub text-slate-300 -mt-1">The White Owl Holidays</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="../index.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Home</a>
+        <a href="destinations.html" class="nav-link text-brand-orange font-bold transition-colors duration-200">Destinations</a>
+        <a href="packages.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Packages</a>
+        <a href="about.html" class="nav-link hover:text-brand-orange transition-colors duration-200">About</a>
+        <a href="blog.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Blog</a>
+        <a href="contact.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="custom-trip.html" id="nav-cta" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle navigation">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-brand-navy/98 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 shadow-2xl transition-all duration-300 opacity-0 -translate-y-4">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700/50 mb-4">
+        <span class="text-lg font-bold text-white">Menu</span>
+        <button id="mobile-menu-close" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 font-semibold text-lg text-white">
+        <a href="../index.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Home</a>
+        <a href="destinations.html" class="py-2.5 px-3 rounded-xl bg-white/10 text-brand-orange">Destinations</a>
+        <a href="packages.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Packages</a>
+        <a href="about.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">About Us</a>
+        <a href="blog.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Blog</a>
+        <a href="contact.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Contact</a>
+      </nav>
+      <div class="mt-6 pt-4 border-t border-slate-700/50">
+        <a href="custom-trip.html" class="btn-primary w-full text-center">Plan Your Trip</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="relative pt-36 pb-20 bg-brand-navy text-white text-center overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-30">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2000&q=80" alt="World travel map & landscape" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3 block">DESTINATION DISCOVERY</span>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-4">
+        Where Will You Go Next?
+      </h1>
+      <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
+        Curated domestic escapes and premier international destinations, tailored with insider experiences and 24/7 guidance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Destinations Grid -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      
+      <!-- Filter Tabs -->
+      <div class="flex items-center justify-center gap-3 mb-12 flex-wrap">
+        <button class="dest-filter-btn px-6 py-2.5 rounded-full font-bold text-sm bg-brand-navy text-white shadow-md transition-all" data-filter="all">All Destinations</button>
+        <button class="dest-filter-btn px-6 py-2.5 rounded-full font-bold text-sm bg-white text-brand-navy border border-slate-200 hover:border-brand-orange transition-all" data-filter="International">International</button>
+        <button class="dest-filter-btn px-6 py-2.5 rounded-full font-bold text-sm bg-white text-brand-navy border border-slate-200 hover:border-brand-orange transition-all" data-filter="Domestic">Domestic (India)</button>
+      </div>
+
+      <!-- Destination Cards Grid -->
+      <div id="destinations-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Dubai -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="International">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹45,999
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">International</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Dubai</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Futuristic luxury skyline, Lahbab desert safaris, and private yacht cruises.</p>
+            <a href="../destination/destination-details.html?dest=dubai" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore Dubai Itineraries →
+            </a>
+          </div>
+        </div>
+
+        <!-- Maldives -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="International">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹78,999
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">International</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Maldives</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Overwater bungalows, vibrant coral reefs, and private candlelight sandbank dining.</p>
+            <a href="../destination/destination-details.html?dest=maldives" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore Maldives Itineraries →
+            </a>
+          </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="International">
+          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80" alt="Singapore" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹52,999
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">International</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Singapore</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Gardens by the Bay, Universal Studios Sentosa, and world-class culinary night markets.</p>
+            <a href="../destination/destination-details.html?dest=singapore" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore Singapore Itineraries →
+            </a>
+          </div>
+        </div>
+
+        <!-- Thailand -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="International">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Thailand" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹34,999
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">International</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Thailand</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Phuket beach resorts, Maya Bay speedboat tours, and Krabi limestone cliffs.</p>
+            <a href="../destination/destination-details.html?dest=thailand" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore Thailand Itineraries →
+            </a>
+          </div>
+        </div>
+
+        <!-- Europe -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="International">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Europe" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹1,45,000
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">International</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Europe</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Jungfraujoch Swiss mountain trains, Seine river cruises, and Parisian romance.</p>
+            <a href="../destination/destination-details.html?dest=europe" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore Europe Itineraries →
+            </a>
+          </div>
+        </div>
+
+        <!-- India -->
+        <div class="travel-card group block relative aspect-[4/5] rounded-3xl overflow-hidden dest-item" data-region="Domestic">
+          <img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80" alt="India" class="card-zoom-img absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+          <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/20">
+            From ₹24,999
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 transform transition-transform duration-300 group-hover:-translate-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-1 block">Domestic (India)</span>
+            <h2 class="text-3xl font-extrabold text-white mb-2">Incredible India</h2>
+            <p class="text-slate-300 text-sm line-clamp-2 mb-4">Handcrafted Dal Lake houseboats, Gulmarg snow slopes, and royal palaces.</p>
+            <a href="../destination/destination-details.html?dest=india" class="inline-flex items-center text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
+              Explore India Itineraries →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-navy mb-4">Have another destination in mind?</h2>
+      <p class="text-brand-muted text-base max-w-xl mx-auto mb-8">
+        We plan bespoke holidays to over 50 destinations worldwide. Tell our 24/7 team where you wish to go.
+      </p>
+      <a href="custom-trip.html" class="btn-primary text-base">Plan My Custom Trip →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-center text-xs text-slate-400">
+      <p>© 2026 TWO247 — The White Owl Holidays. All rights reserved. 24/7 Travel Guidance.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Region Filter Tabs
+    const filterButtons = document.querySelectorAll('.dest-filter-btn');
+    const destItems = document.querySelectorAll('.dest-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-brand-navy', 'text-white');
+          b.classList.add('bg-white', 'text-brand-navy');
+        });
+        btn.classList.add('bg-brand-navy', 'text-white');
+        btn.classList.remove('bg-white', 'text-brand-navy');
+
+        const filter = btn.dataset.filter;
+        destItems.forEach(item => {
+          if (filter === 'all' || item.dataset.region === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!-- TWO247 Navigation Bar -->
+<header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-4 px-4 sm:px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Brand Logo Lockup -->
+    <a href="index.html" class="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1" aria-label="TWO247 Home">
+      <img id="logo-img-light" src="assets/logo/two247-logo-white.png" alt="TWO247 — The White Owl Holidays Logo" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+      <img id="logo-img-dark" src="assets/logo/two247-logo-transparent.png" alt="TWO247 — The White Owl Holidays Logo" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 hidden">
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/90">
+      <a href="index.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Home</a>
+      <a href="pages/destinations.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Destinations</a>
+      <a href="pages/packages.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Packages</a>
+      <a href="pages/about.html" class="nav-link hover:text-brand-orange transition-colors duration-200">About</a>
+      <a href="pages/blog.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Blog</a>
+      <a href="pages/contact.html" class="nav-link hover:text-brand-orange transition-colors duration-200">Contact</a>
+    </nav>
+
+    <!-- Desktop Primary CTA -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="pages/custom-trip.html" id="nav-cta" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+        <span>Plan Your Trip</span>
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-lg" aria-label="Toggle navigation menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown / Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-brand-navy/98 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 shadow-2xl transition-all duration-300 opacity-0 -translate-y-4">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-700/50 mb-4">
+      <div class="flex items-center gap-2">
+        <span class="text-lg font-bold text-white">Menu</span>
+        <span class="text-xs px-2 py-0.5 bg-brand-orange/20 text-brand-orange font-semibold rounded-full">24/7 Support</span>
+      </div>
+      <button id="mobile-menu-close" class="text-slate-400 hover:text-white p-1" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-3 font-semibold text-lg text-white">
+      <a href="index.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">Home</a>
+      <a href="pages/destinations.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">Destinations</a>
+      <a href="pages/packages.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">Packages</a>
+      <a href="pages/about.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">About Us</a>
+      <a href="pages/blog.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">Travel Blog</a>
+      <a href="pages/contact.html" class="py-2 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange transition-colors">Contact</a>
+    </nav>
+    <div class="mt-6 pt-4 border-t border-slate-700/50 flex flex-col gap-3">
+      <a href="pages/custom-trip.html" class="btn-primary w-full text-center">
+        <span>Plan Your Trip</span>
+        <svg class="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+      <button onclick="window.sendWhatsAppEnquiry()" class="w-full py-3 px-4 rounded-full border border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 font-bold text-sm flex items-center justify-center gap-2 transition-colors">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.18-.539-1.894-.785-3.109-2.73-3.203-2.855-.094-.125-.764-1.016-.764-1.938 0-.921.484-1.374.656-1.562.172-.188.375-.235.5-.235.125 0 .25.002.359.007.116.005.271-.044.425.326.158.38.544 1.328.592 1.425.048.098.08.212.016.339-.064.127-.096.206-.191.318-.096.111-.201.248-.287.333-.096.095-.196.198-.084.39.112.192.497.821 1.066 1.328.733.652 1.35.854 1.542.949.192.095.305.08.417-.048.112-.127.483-.561.611-.754.128-.193.256-.16.432-.095.176.064 1.119.527 1.311.623.192.096.32.144.368.224.048.08.048.463-.096.868z"/>
+        </svg>
+        <span>Instant WhatsApp 24/7</span>
+      </button>
+    </div>
+  </div>
+</header>

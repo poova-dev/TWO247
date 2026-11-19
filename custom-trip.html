@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Custom Holiday | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Plan your custom holiday with TWO247. Share your destination, dates, and budget for a bespoke itinerary backed by 24/7 dedicated travel support.">
+  <link rel="canonical" href="https://two247holidays.com/custom-trip.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Header -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1" aria-label="TWO247 Home">
+        <img id="logo-img-light" src="assets/logo/two247-logo-white.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <img id="logo-img-dark" src="assets/logo/two247-logo-transparent.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 hidden">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="index.html" class="nav-link hover:text-brand-orange transition-colors">Home</a>
+        <a href="destinations.html" class="nav-link hover:text-brand-orange transition-colors">Destinations</a>
+        <a href="packages.html" class="nav-link hover:text-brand-orange transition-colors">Packages</a>
+        <a href="about.html" class="nav-link hover:text-brand-orange transition-colors">About</a>
+        <a href="blog.html" class="nav-link hover:text-brand-orange transition-colors">Blog</a>
+        <a href="faq.html" class="nav-link hover:text-brand-orange transition-colors">FAQ</a>
+        <a href="contact.html" class="nav-link hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="custom-trip.html" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-brand-navy/98 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 shadow-2xl transition-all duration-300 opacity-0 -translate-y-4">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700/50 mb-4">
+        <span class="text-lg font-bold text-white">Menu</span>
+        <button id="mobile-menu-close" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 font-semibold text-lg text-white">
+        <a href="index.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Home</a>
+        <a href="destinations.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Destinations</a>
+        <a href="packages.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Holiday Packages</a>
+        <a href="about.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">About Us</a>
+        <a href="blog.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Blog</a>
+        <a href="faq.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">FAQ</a>
+        <a href="contact.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Contact</a>
+      </nav>
+      <div class="mt-6 pt-4 border-t border-slate-700/50">
+        <a href="custom-trip.html" class="btn-primary w-full text-center">Plan Your Trip →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative pt-36 pb-20 bg-brand-navy text-white text-center overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-25">
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80" alt="Scenic road trip" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3 block">BESPOKE TRAVEL DESIGN</span>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-4">
+        Your Trip. Your Way.
+      </h1>
+      <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
+        Tell us what you're looking for and our travel team will help create the right journey for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Custom Trip Form -->
+  <section class="section-padding bg-brand-bg -mt-10 relative z-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl shadow-elevated p-8 sm:p-12 border border-slate-200">
+        
+        <div class="mb-10 text-center">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">Build Your Tailored Itinerary</h2>
+          <p class="text-sm text-brand-muted mt-2">
+            No fixed departure dates. Every hotel, flight transfer, and experience is adapted to you.
+          </p>
+        </div>
+
+        <form id="custom-trip-form" class="space-y-8">
+          
+          <!-- Section 1: Personal Details -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-brand-orange flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs flex items-center justify-center font-bold">1</span>
+              Personal Details
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Full Name *</label>
+                <input type="text" name="name" required placeholder="e.g. Meera Kapoor" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp Number *</label>
+                <input type="tel" name="phone" required placeholder="e.g. +91 98765 43210" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Email Address</label>
+                <input type="email" name="email" placeholder="e.g. meera@example.com" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Trip Details -->
+          <div class="space-y-4 pt-6 border-t border-slate-100">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-brand-orange flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs flex items-center justify-center font-bold">2</span>
+              Trip Details
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Destination *</label>
+                <input type="text" name="destination" required placeholder="e.g. Dubai, Maldives, Kashmir, Switzerland" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Departure Date</label>
+                <input type="date" name="travelDate" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Return Date</label>
+                <input type="date" name="returnDate" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Adults (12+)</label>
+                <select name="adults" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange font-semibold">
+                  <option value="1">1 Adult</option>
+                  <option value="2" selected>2 Adults (Couple)</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4 Adults</option>
+                  <option value="5+">5+ Adults (Group)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Children (0-11)</label>
+                <select name="children" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange font-semibold">
+                  <option value="0" selected>0 Children</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children</option>
+                  <option value="3+">3+ Children</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Trip Type</label>
+                <select name="tripType" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange font-semibold">
+                  <option value="Honeymoon / Couple">Honeymoon / Couple</option>
+                  <option value="Family Holiday">Family Holiday</option>
+                  <option value="Luxury Escape">Luxury Escape</option>
+                  <option value="Adventure & Exploring">Adventure & Exploring</option>
+                  <option value="Group Tours">Group Tours</option>
+                  <option value="Corporate Offsite">Corporate Offsite</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Budget -->
+          <div class="space-y-4 pt-6 border-t border-slate-100">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-brand-orange flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs flex items-center justify-center font-bold">3</span>
+              Budget
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Budget Range Per Person</label>
+                <select name="budget" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange font-semibold">
+                  <option value="Flexible">Flexible / Custom</option>
+                  <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                  <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                  <option value="₹1,00,000 – ₹2,00,000">₹1,00,000 – ₹2,00,000</option>
+                  <option value="₹2,00,000+ (Ultra Luxury)">₹2,00,000+ (Ultra Luxury)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Currency</label>
+                <select name="currency" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange font-semibold">
+                  <option value="INR" selected>INR (₹)</option>
+                  <option value="USD">USD ($)</option>
+                  <option value="EUR">EUR (€)</option>
+                  <option value="AED">AED (AED)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Requirements -->
+          <div class="space-y-4 pt-6 border-t border-slate-100">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-brand-orange flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs flex items-center justify-center font-bold">4</span>
+              Requirements & Notes
+            </h3>
+            <div>
+              <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Additional Message / Special Wishes</label>
+              <textarea name="requirements" rows="3" placeholder="Tell us if you need private airport cars, candlelight dinners, overwater villas, specific flight sectors, dietary requirements..." class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Action -->
+          <div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-brand-muted flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span>
+              <span>100% Free Consultation • No Obligation • 24/7 Active Travel Desk</span>
+            </div>
+            <button type="submit" class="btn-primary w-full sm:w-auto text-base">
+              <span>Plan My Trip →</span>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="form-success-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl relative">
+      <div class="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mb-4">
+        ✓
+      </div>
+      <h3 class="text-2xl font-black text-brand-navy mb-2">Travel Request Received!</h3>
+      <p class="text-sm text-brand-muted mb-6 leading-relaxed">
+        Thank you! Our destination specialist has received your travel preferences and is curating your personalized itinerary. We will contact you via WhatsApp / phone shortly.
+      </p>
+      <div class="space-y-3">
+        <button id="modal-whatsapp-btn" class="w-full py-3.5 px-4 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-colors">
+          <span>Open Direct WhatsApp Chat</span>
+        </button>
+        <button id="close-modal-btn" class="w-full py-2.5 px-4 rounded-full border border-slate-200 text-brand-navy hover:bg-slate-50 font-bold text-xs transition-colors">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-12 pb-8 text-center text-xs text-slate-400">
+    <p>© 2026 TWO247 — The White Owl Holidays. 24/7 Travel Support.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

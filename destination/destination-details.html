@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination Guide | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Detailed travel guide, curated packages, best time to visit, and top experiences with TWO247.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .navbar-scrolled .brand-logo-title { color: #071A2B !important; }
+    .navbar-scrolled .brand-logo-sub { color: #64748B !important; }
+    .navbar-scrolled .nav-link { color: #0F172A !important; }
+    .navbar-scrolled .nav-link:hover { color: #F59E0B !important; }
+    .navbar-scrolled #mobile-menu-btn { color: #071A2B !important; }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Navigation -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1">
+        <div class="w-10 h-10 transition-transform duration-300 group-hover:scale-105">
+          <svg viewBox="0 0 48 48" fill="none" class="w-full h-full drop-shadow-md">
+            <circle cx="24" cy="24" r="21" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="85 45" stroke-linecap="round" />
+            <path d="M12 16C12 12 18 10 24 15C30 10 36 12 36 16C36 28 29 36 24 38C19 36 12 28 12 16Z" fill="#071A2B" stroke="#F59E0B" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M14 17C17 14 22 17 24 20C26 17 31 14 34 17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="18" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="18.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <circle cx="30" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="30" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="30.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <polygon points="24,23 26,27 24,31 22,27" fill="#F59E0B" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight brand-logo-title text-white">TWO<span class="text-brand-orange">247</span></span>
+          <span class="text-[10px] uppercase font-semibold tracking-widest brand-logo-sub text-slate-300 -mt-1">The White Owl Holidays</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="../index.html" class="nav-link hover:text-brand-orange transition-colors">Home</a>
+        <a href="../pages/destinations.html" class="nav-link text-brand-orange font-bold transition-colors">Destinations</a>
+        <a href="../pages/packages.html" class="nav-link hover:text-brand-orange transition-colors">Packages</a>
+        <a href="../pages/about.html" class="nav-link hover:text-brand-orange transition-colors">About</a>
+        <a href="../pages/blog.html" class="nav-link hover:text-brand-orange transition-colors">Blog</a>
+        <a href="../pages/contact.html" class="nav-link hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="../pages/custom-trip.html" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Destination Dynamic Hero -->
+  <section class="relative min-h-[60vh] flex items-end bg-brand-navy text-white overflow-hidden pb-16 pt-36">
+    <div class="absolute inset-0 z-0">
+      <img id="dest-hero-img" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=80" alt="Destination Hero" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-orange text-white text-xs font-bold uppercase tracking-wider mb-4">
+        <span id="dest-region">International</span> Destination
+      </div>
+      <h1 id="dest-name" class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-4">
+        Dubai
+      </h1>
+      <p id="dest-tagline" class="text-xl sm:text-2xl text-slate-200 max-w-3xl font-medium">
+        Futuristic luxury meets timeless desert magic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Facts Bar -->
+  <section class="bg-brand-dark border-b border-slate-800 py-6 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-200 text-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-orange font-bold text-lg">⏳</div>
+        <div>
+          <span class="text-xs text-slate-400 block font-semibold">Ideal Duration</span>
+          <span id="dest-duration" class="font-bold text-white text-base">5 to 7 Days</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-orange font-bold text-lg">☀️</div>
+        <div>
+          <span class="text-xs text-slate-400 block font-semibold">Best Time to Visit</span>
+          <span id="dest-best-time" class="font-bold text-white text-base">November to March</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-orange font-bold text-lg">💰</div>
+        <div>
+          <span class="text-xs text-slate-400 block font-semibold">Packages Starting</span>
+          <span id="dest-price" class="font-bold text-white text-base">₹45,999</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-orange font-bold text-lg">🦉</div>
+        <div>
+          <span class="text-xs text-slate-400 block font-semibold">Assistance</span>
+          <span class="font-bold text-emerald-400 text-base">24/7 On-Trip Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Content & Top Experiences -->
+  <section class="section-padding bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+        <!-- Left: Destination Overview & Experiences -->
+        <div class="lg:col-span-2 space-y-10">
+          <div>
+            <h2 class="text-3xl font-extrabold text-brand-navy mb-4">About the Destination</h2>
+            <p id="dest-desc" class="text-brand-muted text-base leading-relaxed">
+              Experience the unmatched luxury and vibrant dynamism of the destination. From awe-inspiring modern marvels to tranquil cultural heritage, every day offers a new perspective.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-extrabold text-brand-navy mb-6">Top Recommended Experiences</h3>
+            <div id="dest-experiences" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-extrabold text-brand-navy mb-6">Recommended Holiday Packages</h3>
+            <div id="dest-packages" class="space-y-6">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Sticky Consultation Box -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-28 bg-brand-bg rounded-3xl p-8 border border-slate-200/80 shadow-subtle space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-orange block">Bespoke Planning</span>
+            <h3 class="text-2xl font-black text-brand-navy">Plan Your Custom Trip</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Prefer a tailored itinerary with chosen hotel ratings, private drivers, and personal sightseeing slots?
+            </p>
+            <div class="space-y-3 pt-2">
+              <a href="../pages/custom-trip.html" class="btn-primary w-full text-center">
+                Customise This Trip →
+              </a>
+              <button onclick="window.sendWhatsAppEnquiry('Hi TWO247, I want to inquire about a custom trip.')" class="w-full py-3 px-4 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 font-bold text-sm flex items-center justify-center gap-2 transition-colors">
+                <span>Chat on WhatsApp (24/7)</span>
+              </button>
+            </div>
+            <div class="pt-4 border-t border-slate-200/80 text-xs text-brand-muted space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> No hidden service charges
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> Free itinerary consultation
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> Direct 24/7 support throughout journey
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-12 pb-8 border-t border-slate-800 text-center text-xs text-slate-400">
+    <p>© 2026 TWO247 — The White Owl Holidays. 24/7 Travel Support.</p>
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/form.js"></script>
+  <script type="module" src="../js/tilt3d.js"></script>
+  <script type="module">
+    import { destinations } from "../data/destinations.js";
+    import { packages } from "../data/packages.js";
+
+    const params = new URLSearchParams(window.location.search);
+    const destSlug = params.get('dest') || 'dubai';
+    const dest = destinations.find(d => d.slug === destSlug) || destinations[0];
+
+    // Populate Hero & Details
+    document.title = `${dest.name} Travel Guide | TWO247 — The White Owl Holidays`;
+    document.getElementById('dest-hero-img').src = dest.heroImage;
+    document.getElementById('dest-name').textContent = dest.name;
+    document.getElementById('dest-region').textContent = dest.region;
+    document.getElementById('dest-tagline').textContent = dest.tagline;
+    document.getElementById('dest-desc').textContent = dest.shortDescription;
+    document.getElementById('dest-duration').textContent = dest.idealDuration;
+    document.getElementById('dest-best-time').textContent = dest.bestTimeToVisit;
+    document.getElementById('dest-price').textContent = dest.startingPrice;
+
+    // Experiences
+    const expContainer = document.getElementById('dest-experiences');
+    expContainer.innerHTML = dest.topExperiences.map(exp => `
+      <div class="p-4 rounded-2xl bg-brand-bg border border-slate-200 flex items-start gap-3">
+        <span class="text-brand-orange text-lg font-bold">✦</span>
+        <span class="text-sm font-bold text-brand-navy">${exp}</span>
+      </div>
+    `).join('');
+
+    // Packages
+    const matchedPackages = packages.filter(p => p.destinationSlug === dest.slug || p.destination.toLowerCase() === dest.name.toLowerCase());
+    const pkgContainer = document.getElementById('dest-packages');
+    if (matchedPackages.length > 0) {
+      pkgContainer.innerHTML = matchedPackages.map(pkg => `
+        <div class="travel-card bg-white p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <img src="${pkg.image}" alt="${pkg.name}" class="w-24 h-24 rounded-2xl object-cover shrink-0">
+            <div>
+              <span class="text-xs font-bold text-brand-orange uppercase">${pkg.duration}</span>
+              <h4 class="text-lg font-bold text-brand-navy">${pkg.name}</h4>
+              <p class="text-xs text-brand-muted">${pkg.highlights[0] || ''}</p>
+            </div>
+          </div>
+          <div class="text-right shrink-0 flex flex-col items-end">
+            <span class="text-lg font-black text-brand-navy">${pkg.startingPrice}</span>
+            <a href="../package/package-details.html?pkg=${pkg.slug}" class="btn-primary text-xs !h-9 !px-4 mt-2">View Itinerary →</a>
+          </div>
+        </div>
+      `).join('');
+    } else {
+      pkgContainer.innerHTML = `
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-brand-muted text-sm mb-4">We are curating new bespoke packages for ${dest.name}.</p>
+          <a href="../pages/custom-trip.html" class="btn-primary text-xs">Request Custom ${dest.name} Itinerary</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

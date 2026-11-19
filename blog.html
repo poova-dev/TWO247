@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog & Destination Guides | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Discover travel inspiration, destination guides, insider tips, honeymoon ideas, and family vacation advice from TWO247 travel specialists.">
+  <link rel="canonical" href="https://two247holidays.com/blog.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Header -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1" aria-label="TWO247 Home">
+        <img id="logo-img-light" src="assets/logo/two247-logo-white.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <img id="logo-img-dark" src="assets/logo/two247-logo-transparent.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 hidden">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="index.html" class="nav-link hover:text-brand-orange transition-colors">Home</a>
+        <a href="destinations.html" class="nav-link hover:text-brand-orange transition-colors">Destinations</a>
+        <a href="packages.html" class="nav-link hover:text-brand-orange transition-colors">Packages</a>
+        <a href="about.html" class="nav-link hover:text-brand-orange transition-colors">About</a>
+        <a href="blog.html" class="nav-link text-brand-orange font-bold transition-colors">Blog</a>
+        <a href="faq.html" class="nav-link hover:text-brand-orange transition-colors">FAQ</a>
+        <a href="contact.html" class="nav-link hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="custom-trip.html" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-brand-navy/98 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 shadow-2xl transition-all duration-300 opacity-0 -translate-y-4">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700/50 mb-4">
+        <span class="text-lg font-bold text-white">Menu</span>
+        <button id="mobile-menu-close" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 font-semibold text-lg text-white">
+        <a href="index.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Home</a>
+        <a href="destinations.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Destinations</a>
+        <a href="packages.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Holiday Packages</a>
+        <a href="about.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">About Us</a>
+        <a href="blog.html" class="py-2.5 px-3 rounded-xl bg-white/10 text-brand-orange">Blog</a>
+        <a href="faq.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">FAQ</a>
+        <a href="contact.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Contact</a>
+      </nav>
+      <div class="mt-6 pt-4 border-t border-slate-700/50">
+        <a href="custom-trip.html" class="btn-primary w-full text-center">Plan Your Trip →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Blog Hero -->
+  <section class="relative pt-36 pb-20 bg-brand-navy text-white text-center overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-25">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2000&q=80" alt="Travel reading and journals" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3 block">EXPERT TRAVEL PERSPECTIVES</span>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-4">
+        Travel Inspiration & Guides
+      </h1>
+      <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
+        Curated advice, seasonal insights, and practical destination tips by our on-ground specialists.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. Featured Article -->
+  <section class="section-padding bg-white -mt-8 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="rounded-3xl bg-brand-navy text-white overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-elevated">
+        <div class="aspect-[16/10] lg:aspect-auto relative">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Dubai skyline" class="w-full h-full object-cover">
+          <span class="absolute top-6 left-6 bg-brand-orange text-white text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+            Featured Guide
+          </span>
+        </div>
+        <div class="p-8 sm:p-12 lg:p-16 flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs text-brand-orange font-bold uppercase tracking-wider">Destination Guide • 7 Min Read</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight hover:text-brand-orange transition-colors">
+              <a href="blog/dubai-travel-guide.html">Best Time to Visit Dubai: Seasons, Weather, & Festivals Explained</a>
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Planning your Dubai escape? We analyze monthly temperatures, desert conditions, Dubai Shopping Festival dates, and Ramadan travel tips so you can choose the perfect month.
+            </p>
+          </div>
+          <div class="pt-8 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400">By TWO247 Travel Desk</span>
+            <a href="blog/dubai-travel-guide.html" class="btn-primary text-xs !h-10 !px-5">
+              Read Full Article →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Categories Strip -->
+  <section class="py-8 bg-slate-100/80 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-center gap-3 flex-wrap">
+      <span class="text-xs font-bold text-brand-navy uppercase mr-2">Categories:</span>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-brand-navy text-white">All Guides</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">Destination Guides</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">Travel Tips</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">Honeymoon Ideas</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">Family Travel</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">International</button>
+      <button class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-brand-navy border border-slate-200 hover:border-brand-orange">Domestic</button>
+    </div>
+  </section>
+
+  <!-- 4. Latest Articles / Travel Guides Grid -->
+  <section class="section-padding bg-brand-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="mb-12">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">Latest Travel Guides</h3>
+        <p class="text-brand-muted text-sm mt-1">Authentic advice written by verified on-ground itinerary designers.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Guide 1 -->
+        <article class="travel-card bg-white group flex flex-col justify-between">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai skyline" class="card-zoom-img w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-brand-navy/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+              Dubai
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block mb-2">Destination Guide • 7 Min Read</span>
+              <h4 class="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors mb-2">
+                <a href="blog/dubai-travel-guide.html">Best Time to Visit Dubai: Seasons, Weather, & Festivals</a>
+              </h4>
+              <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                Everything you need to know about weather windows, shopping discounts, and family attractions in Dubai.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a href="blog/dubai-travel-guide.html" class="text-xs font-bold text-brand-orange group-hover:translate-x-1 inline-flex items-center transition-transform">
+                Read Article →
+              </a>
+              <a href="packages.html?dest=dubai" class="text-xs font-semibold text-brand-navy hover:underline">
+                View Packages
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Guide 2 -->
+        <article class="travel-card bg-white group flex flex-col justify-between">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives ocean" class="card-zoom-img w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-brand-navy/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+              Maldives
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block mb-2">Honeymoon & Tips • 5 Min Read</span>
+              <h4 class="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors mb-2">
+                <a href="blog/dubai-travel-guide.html">5 Things to Know Before Booking Your First Maldives Vacation</a>
+              </h4>
+              <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                Speedboat vs seaplane transfers, island atoll selection, all-inclusive meal packages, and reef snorkeling safety.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a href="blog/dubai-travel-guide.html" class="text-xs font-bold text-brand-orange group-hover:translate-x-1 inline-flex items-center transition-transform">
+                Read Article →
+              </a>
+              <a href="packages.html?dest=maldives" class="text-xs font-semibold text-brand-navy hover:underline">
+                View Packages
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Guide 3 -->
+        <article class="travel-card bg-white group flex flex-col justify-between">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80" alt="Singapore Marina" class="card-zoom-img w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-brand-navy/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+              Singapore
+            </span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block mb-2">Family Travel • 6 Min Read</span>
+              <h4 class="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors mb-2">
+                <a href="blog/dubai-travel-guide.html">Ultimate Singapore Travel Guide: 5 Days in the City of Gardens</a>
+              </h4>
+              <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                The perfect 5-day family itinerary: Gardens by the Bay, Universal Studios Singapore, S.E.A. Aquarium, and food trails.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a href="blog/dubai-travel-guide.html" class="text-xs font-bold text-brand-orange group-hover:translate-x-1 inline-flex items-center transition-transform">
+                Read Article →
+              </a>
+              <a href="packages.html?dest=singapore" class="text-xs font-semibold text-brand-navy hover:underline">
+                View Packages
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CTA -->
+  <section class="py-16 bg-brand-navy text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-black mb-4">Inspired to travel? Let TWO247 craft your itinerary.</h2>
+      <p class="text-slate-300 text-base max-w-xl mx-auto mb-8">
+        Tell us your dream destinations and dates. Receive a custom quote with 24/7 dedicated support.
+      </p>
+      <a href="custom-trip.html" class="btn-primary text-base">Plan My Custom Trip →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-12 pb-8 text-center text-xs text-slate-400">
+    <p>© 2026 TWO247 — The White Owl Holidays. 24/7 Travel Support.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+</body>
+</html>

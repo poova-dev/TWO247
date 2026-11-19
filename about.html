@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Discover TWO247 – The White Owl Holidays. Personalised trip planning, verified stays, and round-the-clock 24/7 travel guidance for unforgettable holidays.">
+  <link rel="canonical" href="https://two247holidays.com/about.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Navbar -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-xl p-1" aria-label="TWO247 Home">
+        <img id="logo-img-light" src="assets/logo/two247-logo-white.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <img id="logo-img-dark" src="assets/logo/two247-logo-transparent.png" alt="TWO247 — The White Owl Holidays" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 hidden">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="index.html" class="nav-link hover:text-brand-orange transition-colors">Home</a>
+        <a href="destinations.html" class="nav-link hover:text-brand-orange transition-colors">Destinations</a>
+        <a href="packages.html" class="nav-link hover:text-brand-orange transition-colors">Packages</a>
+        <a href="about.html" class="nav-link text-brand-orange font-bold transition-colors">About</a>
+        <a href="blog.html" class="nav-link hover:text-brand-orange transition-colors">Blog</a>
+        <a href="faq.html" class="nav-link hover:text-brand-orange transition-colors">FAQ</a>
+        <a href="contact.html" class="nav-link hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="custom-trip.html" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-brand-navy/98 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-6 shadow-2xl transition-all duration-300 opacity-0 -translate-y-4">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-700/50 mb-4">
+        <span class="text-lg font-bold text-white">Menu</span>
+        <button id="mobile-menu-close" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 font-semibold text-lg text-white">
+        <a href="index.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Home</a>
+        <a href="destinations.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Destinations</a>
+        <a href="packages.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Holiday Packages</a>
+        <a href="about.html" class="py-2.5 px-3 rounded-xl bg-white/10 text-brand-orange">About Us</a>
+        <a href="blog.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Blog</a>
+        <a href="faq.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">FAQ</a>
+        <a href="contact.html" class="py-2.5 px-3 rounded-xl hover:bg-white/10 hover:text-brand-orange">Contact</a>
+      </nav>
+      <div class="mt-6 pt-4 border-t border-slate-700/50">
+        <a href="custom-trip.html" class="btn-primary w-full text-center">Plan Your Trip →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Hero -->
+  <section class="relative pt-36 pb-24 bg-brand-navy text-white text-center overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-25">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2000&q=80" alt="Travel map and globe" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold uppercase tracking-widest text-brand-orange mb-4">
+        <span>ABOUT THE WHITE OWL HOLIDAYS</span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6">
+        Travel With Confidence.
+      </h1>
+      <p class="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+        We help travellers discover, plan and experience unforgettable journeys with personalised travel support.
+      </p>
+      <a href="custom-trip.html" class="btn-primary text-base">
+        <span>Plan Your Trip →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. Our Story -->
+  <section class="section-padding bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-2 block">ORIGIN & HERITAGE</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-brand-navy mb-4">Our Story</h2>
+          <div class="space-y-4 text-brand-muted text-base leading-relaxed">
+            <p>
+              <strong>TWO247 — The White Owl Holidays</strong> was conceived around a simple yet vital observation: while booking tickets and hotels has become automated, true travel confidence still relies on personal human guidance and real-time support.
+            </p>
+            <p>
+              The owl symbolises wisdom, sharp vision, and watchful awareness both by day and throughout the night. By uniting <strong>TWO (The White Owl)</strong> with <strong>247 (Round-the-Clock Support)</strong>, our brand guarantees that no guest ever travels alone.
+            </p>
+            <p class="p-4 bg-slate-50 rounded-2xl border border-slate-200 text-xs text-slate-600">
+              <span class="font-bold text-brand-navy block mb-1">Company Information:</span>
+              • Established: <span class="font-semibold text-brand-navy">[Established Year]</span><br>
+              • Founders: <span class="font-semibold text-brand-navy">[Founder Information]</span><br>
+              • Headquarters: <span class="font-semibold text-brand-navy">[Office Location]</span><br>
+              • Corporate Profile: <span class="font-semibold text-brand-navy">[Company Story]</span>
+            </p>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden shadow-elevated border border-slate-100 aspect-[4/3]">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Scenic mountain valley" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- 3. What We Believe -->
+      <div class="pt-12 border-t border-slate-100">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-2 block">GUIDING VALUES</span>
+          <h3 class="text-3xl font-extrabold text-brand-navy">What We Believe</h3>
+          <p class="text-sm text-brand-muted mt-2">The four bedrock principles behind every holiday package we craft.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 rounded-3xl bg-brand-bg border border-slate-200">
+            <span class="text-brand-orange text-3xl font-black block mb-3">01</span>
+            <h4 class="font-extrabold text-brand-navy text-lg mb-2">Customer First</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Your convenience, budget and preferences always outrank commercial commissions.</p>
+          </div>
+          <div class="p-6 rounded-3xl bg-brand-bg border border-slate-200">
+            <span class="text-brand-orange text-3xl font-black block mb-3">02</span>
+            <h4 class="font-extrabold text-brand-navy text-lg mb-2">Transparent Pricing</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">No surprise levies, hidden transfer surcharges or forced shopping stops.</p>
+          </div>
+          <div class="p-6 rounded-3xl bg-brand-bg border border-slate-200">
+            <span class="text-brand-orange text-3xl font-black block mb-3">03</span>
+            <h4 class="font-extrabold text-brand-navy text-lg mb-2">Quality Over Quantity</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Thoughtfully paced days with time to absorb each destination rather than checking off boxes.</p>
+          </div>
+          <div class="p-6 rounded-3xl bg-brand-bg border border-slate-200">
+            <span class="text-brand-orange text-3xl font-black block mb-3">04</span>
+            <h4 class="font-extrabold text-brand-navy text-lg mb-2">Constant Availability</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">An awake, active concierge team ready to resolve flight shifts, room changes, or questions.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Why TWO247 & 5. 24/7 Travel Assistance -->
+  <section class="section-padding bg-brand-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-2 block">THE OPERATIONAL DIFFERENCE</span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-6 leading-tight">
+            24/7 Travel Assistance In Practice.
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed mb-6">
+            When you land in Dubai at midnight or your flight to Srinagar is rescheduled, you don't talk to a bot. You have a dedicated WhatsApp group with your on-trip coordinator who coordinates directly with drivers, hotels, and airlines.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-bold mt-1">✓</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Real Human Response Within 5 Minutes</h4>
+                <p class="text-xs text-slate-400">Direct WhatsApp access to destination specialists before and during your trip.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-bold mt-1">✓</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Proactive Flight & Weather Tracking</h4>
+                <p class="text-xs text-slate-400">We monitor your flights in real time to ensure chauffeurs are waiting at arrival gates.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-bold mt-1">✓</span>
+              <div>
+                <h4 class="font-bold text-white text-sm">Emergency & Medical Advisory</h4>
+                <p class="text-xs text-slate-400">Immediate access to verified local clinic coordinates and English/Hindi speaking guides.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-brand-dark p-8 rounded-3xl border border-slate-800 space-y-6">
+          <h3 class="text-xl font-bold text-white">Our Complete Travel Services</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Tailor-made International Holidays (Dubai, Maldives, Singapore, Europe)</li>
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Domestic Luxury Escapes (Kashmir, Kerala, Rajasthan, Goa)</li>
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Honeymoon Special Packages with Romantic Inclusions</li>
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Multi-generational Family Holidays with Child/Elder Assistance</li>
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Corporate Offsites & Group Delegations</li>
+            <li class="flex items-center gap-3"><span class="text-brand-orange">✦</span> Visa Consultation & Airport Fast-Track Coordination</li>
+          </ul>
+          <button onclick="window.sendWhatsAppEnquiry()" class="btn-primary w-full text-xs !h-11">
+            <span>Connect With Travel Desk on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Trust & Testimonials -->
+  <section class="section-padding bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-orange mb-2 block">VERIFIED EXPERIENCES</span>
+      <h3 class="text-3xl font-extrabold text-brand-navy mb-8">What Our Travellers Say</h3>
+      <div class="p-8 sm:p-12 rounded-3xl bg-brand-bg border border-slate-200 shadow-subtle max-w-3xl mx-auto">
+        <div class="text-amber-400 text-xl mb-4">★★★★★</div>
+        <p class="text-brand-navy text-lg italic leading-relaxed mb-6">
+          "TWO247 transformed the way our family travels. From the moment our flight landed in Malé to our resort speedboat, everything was timed to the minute. The 24/7 team in India was checking on us every single morning."
+        </p>
+        <span class="font-extrabold text-brand-navy block text-sm">Vikram & Neha Khanna</span>
+        <span class="text-xs text-brand-muted">Maldives Overwater Vacation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="py-16 bg-brand-navy text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-black mb-4">Ready to start planning your next journey?</h2>
+      <p class="text-slate-300 text-base max-w-xl mx-auto mb-8">
+        Speak with a TWO247 holiday specialist today. No consultation fee, 100% customisable.
+      </p>
+      <a href="custom-trip.html" class="btn-primary text-base">Plan Your Trip →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-12 pb-8 text-center text-xs text-slate-400">
+    <p>© 2026 TWO247 — The White Owl Holidays. All rights reserved. 24/7 Travel Support.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

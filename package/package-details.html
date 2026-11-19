@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Details | TWO247 — The White Owl Holidays</title>
+  <meta name="description" content="Day-by-day itinerary, inclusions, exclusions, and pricing for this holiday package. Personalised with 24/7 travel assistance.">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/owl-mark.svg">
+  <link rel="stylesheet" href="../css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px -2px rgba(7, 26, 43, 0.08);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .navbar-scrolled .brand-logo-title { color: #071A2B !important; }
+    .navbar-scrolled .brand-logo-sub { color: #64748B !important; }
+    .navbar-scrolled .nav-link { color: #0F172A !important; }
+    .navbar-scrolled .nav-link:hover { color: #F59E0B !important; }
+    .navbar-scrolled #mobile-menu-btn { color: #071A2B !important; }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden pb-16 md:pb-0">
+
+  <!-- Header -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-transparent py-5 px-4 sm:px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 transition-transform group-hover:scale-105">
+          <svg viewBox="0 0 48 48" fill="none" class="w-full h-full drop-shadow-md">
+            <circle cx="24" cy="24" r="21" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="85 45" stroke-linecap="round" />
+            <path d="M12 16C12 12 18 10 24 15C30 10 36 12 36 16C36 28 29 36 24 38C19 36 12 28 12 16Z" fill="#071A2B" stroke="#F59E0B" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M14 17C17 14 22 17 24 20C26 17 31 14 34 17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="18" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="18.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <circle cx="30" cy="22" r="3.2" fill="#F59E0B" />
+            <circle cx="30" cy="22" r="1.4" fill="#071A2B" />
+            <circle cx="30.8" cy="21.2" r="0.6" fill="#FFFFFF" />
+            <polygon points="24,23 26,27 24,31 22,27" fill="#F59E0B" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight brand-logo-title text-white">TWO<span class="text-brand-orange">247</span></span>
+          <span class="text-[10px] uppercase font-semibold tracking-widest brand-logo-sub text-slate-300 -mt-1">The White Owl Holidays</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-semibold text-white/95">
+        <a href="../index.html" class="nav-link hover:text-brand-orange transition-colors">Home</a>
+        <a href="../pages/destinations.html" class="nav-link hover:text-brand-orange transition-colors">Destinations</a>
+        <a href="../pages/packages.html" class="nav-link text-brand-orange font-bold transition-colors">Packages</a>
+        <a href="../pages/about.html" class="nav-link hover:text-brand-orange transition-colors">About</a>
+        <a href="../pages/blog.html" class="nav-link hover:text-brand-orange transition-colors">Blog</a>
+        <a href="../pages/contact.html" class="nav-link hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="../pages/custom-trip.html" class="btn-primary text-sm shadow-md hover:shadow-glow-orange">
+          <span>Plan Your Trip</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Package Dynamic Hero -->
+  <section class="relative min-h-[58vh] flex items-end bg-brand-navy text-white overflow-hidden pb-14 pt-36">
+    <div class="absolute inset-0 z-0">
+      <img id="pkg-hero-img" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=80" alt="Package Hero" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full">
+      <div class="flex items-center gap-3 mb-4 flex-wrap">
+        <span id="pkg-dest-badge" class="px-3.5 py-1 rounded-full bg-brand-orange text-white text-xs font-bold uppercase tracking-wider">
+          Dubai
+        </span>
+        <span id="pkg-duration-badge" class="px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold">
+          5 Days / 4 Nights
+        </span>
+        <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 100% Customisable
+        </span>
+      </div>
+      <h1 id="pkg-title" class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4">
+        Luxury Dubai Escape
+      </h1>
+      <p id="pkg-summary" class="text-slate-200 text-lg sm:text-xl max-w-2xl font-medium">
+        Experience iconic architecture, desert safaris, and private marina cruising with round-the-clock guidance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Specs Strip -->
+  <section class="bg-brand-dark border-b border-slate-800 py-4 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-6 text-sm">
+      <div class="flex items-center gap-6">
+        <div>
+          <span class="text-xs text-slate-400 block font-semibold">Starting Price</span>
+          <span id="pkg-price" class="text-2xl font-black text-white">₹48,999 <span class="text-xs font-normal text-slate-400">/ person</span></span>
+        </div>
+        <div class="h-8 w-px bg-slate-700 hidden sm:block"></div>
+        <div class="hidden sm:block">
+          <span class="text-xs text-slate-400 block font-semibold">Traveller Rating</span>
+          <span id="pkg-rating" class="font-bold text-amber-400">★ 4.9 (42 Verified Reviews)</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <button onclick="triggerPackageWhatsApp()" class="py-2.5 px-6 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 transition-colors">
+          <span>Enquire on WhatsApp</span>
+        </button>
+        <a href="#enquiry-form" class="btn-primary !h-10 !px-6 text-xs">
+          Plan This Trip
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <section class="section-padding bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+        <!-- Left: Highlights, Itinerary, Inclusions/Exclusions -->
+        <div class="lg:col-span-2 space-y-12">
+          
+          <!-- Highlights -->
+          <div>
+            <h2 class="text-2xl font-extrabold text-brand-navy mb-6">Package Highlights</h2>
+            <div id="pkg-highlights" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Day-by-Day Itinerary -->
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-extrabold text-brand-navy">Day-by-Day Itinerary</h2>
+              <span class="text-xs text-brand-orange font-bold uppercase">Flexible & Adaptable</span>
+            </div>
+            <div id="pkg-itinerary" class="space-y-4">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-slate-100">
+            <!-- Inclusions -->
+            <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200">
+              <h3 class="text-lg font-bold text-brand-navy mb-4 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs">✓</span>
+                What's Included
+              </h3>
+              <ul id="pkg-inclusions" class="space-y-2.5 text-xs sm:text-sm text-brand-muted">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+
+            <!-- Exclusions -->
+            <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200">
+              <h3 class="text-lg font-bold text-brand-navy mb-4 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center text-xs">✕</span>
+                What's Not Included
+              </h3>
+              <ul id="pkg-exclusions" class="space-y-2.5 text-xs sm:text-sm text-brand-muted">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- 24/7 Guarantee Badge -->
+          <div class="p-6 rounded-3xl bg-brand-navy text-white flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="space-y-1">
+              <span class="text-xs font-bold text-brand-orange uppercase tracking-wider">TWO247 Promise</span>
+              <h4 class="text-lg font-bold text-white">24/7 Dedicated On-Trip Coordinator</h4>
+              <p class="text-xs text-slate-300">You'll receive a dedicated WhatsApp travel desk contact active around the clock during your entire holiday.</p>
+            </div>
+            <button onclick="triggerPackageWhatsApp()" class="btn-primary !h-10 text-xs shrink-0">
+              Talk to Specialist
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right: Lead Capture Form -->
+        <div class="lg:col-span-1">
+          <div id="enquiry-form" class="sticky top-28 bg-brand-bg rounded-3xl p-8 border border-slate-200 shadow-subtle space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-orange block mb-1">FREE CONSULTATION</span>
+              <h3 class="text-2xl font-black text-brand-navy">Request Package Quote</h3>
+              <p class="text-xs text-brand-muted mt-1">
+                Share your dates and group size. A specialist will send a custom quote within 2 hours.
+              </p>
+            </div>
+
+            <form id="package-enquiry-form" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Your Name *</label>
+                <input type="text" name="name" required placeholder="e.g. Rahul Sharma" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Phone / WhatsApp Number *</label>
+                <input type="tel" name="phone" required placeholder="e.g. +91 98765 43210" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Email Address</label>
+                <input type="email" name="email" placeholder="e.g. rahul@example.com" class="w-full text-sm px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white">
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Travel Date</label>
+                  <input type="date" name="travelDate" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Travellers</label>
+                  <select name="travellers" class="w-full text-sm px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white font-semibold">
+                    <option value="2 Adults">2 Adults (Couple)</option>
+                    <option value="Family (3-4)">Family (3-4)</option>
+                    <option value="Group (5+)">Group (5+)</option>
+                    <option value="Solo">Solo</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-navy uppercase mb-1">Custom Requests / Notes</label>
+                <textarea name="notes" rows="2" placeholder="Specific hotel preferences, flights required, etc." class="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-orange bg-white"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full text-sm">
+                Get Custom Itinerary & Quote →
+              </button>
+            </form>
+
+            <div class="text-center pt-2">
+              <span class="text-xs text-brand-muted block mb-2">Or prefer direct instant response?</span>
+              <button onclick="triggerPackageWhatsApp()" class="text-emerald-700 font-bold text-xs hover:underline flex items-center justify-center gap-1.5 mx-auto">
+                <span>Direct WhatsApp Chat (24/7)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white pt-12 pb-8 text-center text-xs text-slate-400">
+    <p>© 2026 TWO247 — The White Owl Holidays. 24/7 Travel Support.</p>
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/form.js"></script>
+  <script type="module" src="../js/tilt3d.js"></script>
+  <script type="module">
+    import { packages } from "../data/packages.js";
+
+    const params = new URLSearchParams(window.location.search);
+    const pkgSlug = params.get('pkg') || 'luxury-dubai-escape';
+    const pkg = packages.find(p => p.slug === pkgSlug) || packages[0];
+
+    // Page title and hero details
+    document.title = `${pkg.name} | TWO247 — The White Owl Holidays`;
+    document.getElementById('pkg-hero-img').src = pkg.image;
+    document.getElementById('pkg-dest-badge').textContent = pkg.destination;
+    document.getElementById('pkg-duration-badge').textContent = pkg.duration;
+    document.getElementById('pkg-title').textContent = pkg.name;
+    document.getElementById('pkg-price').innerHTML = `${pkg.startingPrice} <span class="text-xs font-normal text-slate-400">/ person</span>`;
+    document.getElementById('pkg-rating').textContent = `★ ${pkg.rating} (${pkg.reviewCount} Verified Reviews)`;
+
+    // Highlights
+    const hlContainer = document.getElementById('pkg-highlights');
+    hlContainer.innerHTML = pkg.highlights.map(h => `
+      <div class="p-4 rounded-2xl bg-brand-bg border border-slate-200 flex items-start gap-3">
+        <span class="text-brand-orange font-bold text-base mt-0.5">✦</span>
+        <span class="text-sm font-bold text-brand-navy">${h}</span>
+      </div>
+    `).join('');
+
+    // Itinerary
+    const itContainer = document.getElementById('pkg-itinerary');
+    itContainer.innerHTML = pkg.itinerary.map((item, idx) => `
+      <div class="p-5 rounded-2xl bg-brand-bg border border-slate-200">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-brand-navy text-white text-xs font-black">Day ${item.day}</span>
+          <h4 class="font-extrabold text-base text-brand-navy">${item.title}</h4>
+        </div>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed pl-10">${item.description}</p>
+      </div>
+    `).join('');
+
+    // Inclusions & Exclusions
+    const incContainer = document.getElementById('pkg-inclusions');
+    incContainer.innerHTML = pkg.inclusions.map(inc => `
+      <li class="flex items-start gap-2">
+        <span class="text-emerald-500 font-bold shrink-0 mt-0.5">✓</span>
+        <span>${inc}</span>
+      </li>
+    `).join('');
+
+    const excContainer = document.getElementById('pkg-exclusions');
+    excContainer.innerHTML = pkg.exclusions.map(exc => `
+      <li class="flex items-start gap-2">
+        <span class="text-rose-500 font-bold shrink-0 mt-0.5">✕</span>
+        <span>${exc}</span>
+      </li>
+    `).join('');
+
+    window.triggerPackageWhatsApp = () => {
+      const msg = `Hi TWO247 team, I am interested in the ${pkg.name} (${pkg.duration}) package. Please share details and pricing.`;
+      window.sendWhatsAppEnquiry(msg);
+    };
+
+    // Form submit
+    const form = document.getElementById('package-enquiry-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const data = Object.fromEntries(fd.entries());
+        alert(`Thank you, ${data.name}! We have received your enquiry for ${pkg.name}. Our travel consultant will contact you via WhatsApp / phone shortly.`);
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>

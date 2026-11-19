@@ -2,9 +2,10 @@
 module.exports = {
   content: [
     "./index.html",
-    "./pages/**/*.{html,js}",
-    "./package/**/*.{html,js}",
-    "./destination/**/*.{html,js}",
+    "./*.html",
+    "./packages/**/*.{html,js}",
+    "./destinations/**/*.{html,js}",
+    "./blog/**/*.{html,js}",
     "./components/**/*.{html,js}",
     "./js/**/*.{html,js}",
     "./data/**/*.{html,js}"
@@ -26,9 +27,10 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', 'Manrope', 'sans-serif'],
+        sans: ['Manrope', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
       },
       borderRadius: {
+        'xl': '0.75rem',
         '2xl': '1rem',
         '3xl': '1.5rem',
       },
